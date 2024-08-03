@@ -37,7 +37,7 @@ a {
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 1rem;
-    margin-top: 1rem;    
+    margin-top: 1rem;
 }
 .tittle{
     color:rgb(0, 50, 124);
@@ -64,20 +64,30 @@ a {
         padding: 3rem;
         gap: 7rem;
     }
+    .group-31 {
+        padding: 3rem
+    }
 }
 .profile{
     grid-column: 1 / -1;
     margin-bottom: 2rem;
 }
 .group-31{
-    max-width: 1100px;
+    max-width: 1300px;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
     width: 90%;
     margin: 0 auto;
     display: grid;
     padding: 2rem;
     background: #ffffff;
     grid-template-columns:1fr 1fr 1fr;
-    gap: 4rem;    
+    gap: 4rem;
+ 
+}
+
+.group-31 > div{
+    flex: 1;
 }
 .group-41{
     max-width: 600px;
@@ -140,6 +150,7 @@ a {
     margin-top: 1rem;
     margin-bottom: 1rem;
     margin-left: 2rem;
+    margin: 2rem;
 }
 /* Interests */
 .interest_items{
@@ -181,9 +192,10 @@ a {
 }
 hr{
     grid-column: 1/-1;
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 5rem;
-    margin-bottom: 1rem;
-    color: #000000;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 5rem;
+	margin-bottom: 1rem;
+	border: none;
+	border-top: 1px solid rgb(0, 0, 0);
 }
