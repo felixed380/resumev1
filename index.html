@@ -1,237 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2802HXYJZN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Felix Rodriguez | QA Engineer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2563eb; /* blue */
+      --secondary: #0f172a; /* dark */
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #1e293b;
+      --muted: #64748b;
+      --radius: 14px;
+    }
 
-  gtag('config', 'G-2802HXYJZN');
-</script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/feather-icons"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), #60a5fa);
+      color: white;
+      padding: 4rem 2rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 250px;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .hero img {
+      width: 100%;
+      border-radius: 50%;
+      border: 4px solid white;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      opacity: 0.95;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: white;
+      border-bottom: 1px solid #e2e8f0;
+      z-index: 100;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 1rem;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    section {
+      margin-top: 4rem;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: var(--secondary);
+    }
+
+    .card {
+      background: var(--card);
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      margin-bottom: 1.5rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #e0e7ff;
+      color: var(--primary);
+      padding: 0.4rem 0.8rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      margin: 0.2rem;
+    }
+
+    footer {
+      margin-top: 5rem;
+      padding: 2rem;
+      background: var(--secondary);
+      color: #cbd5f5;
+      text-align: center;
+    }
+
+    @media(max-width: 768px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .hero img {
+        max-width: 180px;
+        margin: auto;
+      }
+    }
+  </style>
 </head>
-
 <body>
-    <div class="container">
-        <div class="profile">
-            <div class="profile_container">
-                <div class="profile_profileImg">
-                    <img src="./Imagenes/Pic1.png" alt="Felix Rodriguez">
-                </div>
-                <div>
-                    <h1 class="profile_name">
-                        <span class="profile_firstname">Felix</span>
-                        <span class="profile_lastname">Rodriguez</span>
-                    </h1>
-                    <p class="profile_tittle">Tech Support Engineer</p>
-                    <p class="description">
-                        Hi, I am Felix; I am Industrial Engineer focused on
-                        IT; I am sure I can use my experience to contribute
-                        to your company’s goals.                    
-                    </p>
-                    <a class="downloadBtn" href="CV Felix R July 2024.pdf" download="Felix Resume.pdf">Download Resume</a>
-                </div>
-            </div>
-        </div>
-        <div class="group-1">
-           <div class="blueTittles">
-            <h1 class="blueTittles">Experience</h1>
-        </div>
-        <div class="tittle group-2">
-            <h2 class="title">L3 Support Engineer | Qentelli | 2022 - Present</h2>
-            <ul class="job_tasks description">
-                <li>Ticket management and triaging</li>
-                <li>Replicate issues and its environments for testing</li>
-                <li>Ensure proper recording and closure of all issues</li>
-                <li>Follow standard procedures for proper escalation of unsolved issues to the appropriate internal and external teams</li>
-                <li>Provide prompt and accurate feedback to customers</li>
-            </ul>
-        </div>
-        <div class="tittle group-3">
-            <h2 class="title">Service desk Analyst lvl 2 | Wipro Technologies | 2022 - 2022</h2>
-            <ul class="job_tasks description">
-                <li>Take ownership of customer issues and see problems through to resolution</li>
-                <li>Research, diagnose, troubleshoot and identify solutions to solve customer issues</li>
-                <li>Follow standard procedures for proper escalation of unsolved issues to the appropriate internal teams</li>
-                <li>Provide prompt and accurate feedback to customers</li>
-                <li>Ensure proper recording and closure of all issues</li>
-            </ul>
-        </div>
-        <div class="tittle group-4">
-            <h2 class="title">Infrastructure and EUC support Engineer | Tata Consultancy Services | 2021 - 2022</h2>
-            <ul class="job_tasks description">
-                <li>IT and Infrastructure duties</li>
-                <li>Desktop management and EUC Support</li>
-                <li>Ensure Security software and policies are up to date</li>
-                <li>Remote Support/Assistance</li>
-                <li>On/Offboarding processes workflow</li>
-            </ul>
-        <div class="tittle group-5">
-            <h2 class="title">Lean Manufacturing Intern | Ball Corporation | 2020 - 2021</h2>
-            <ul class="job_tasks description">
-                <li>Constant Improvement Management</li>
-                <li>Lean Methodologies Implementation</li>
-                <li>Optimization process</li>
-                <li>Data analysis, failure mapping process, statistic tools</li>
-                <li>Work Documentation</li>
-                <li>KPIs</li>
-            </ul>    
-        </div>     
-        </div>
-        </div>
-        <div class="group-2">
-            <div class="blueTittles">
-                <h1 class="blueTittles">Education</h1>
-            </div>
-        <div class="tittle group-2">
-            <h2 class="title">Bachelor's Degree | Industrial Engineer</h2>
-                <ul class="job_tasks description">
-                    <li>Instituro Tecnológico de Quéretaro</li>
-                </ul>
-        </div>
-        <div class="tittle group-2">
-            <h2 class="title">LinkedIn Learning
-            </h2>
-                <ul class="job_tasks description">
-                    <li>Different skills courses</li>
-                </ul>
-        </div>
-        <div class="tittle group-2">
-            <h2 class="title">W3 Schools</h2>
-                <ul class="job_tasks description">
-                    <li>Different programming courses</li>
-                </ul>
-        </div>
-        <div class="tittle group-2">
-            <h2 class="title">UDEMI</h2>
-                <ul class="job_tasks description">
-                    <li>AWS, Postman, Jira and other courses</li>
-                </ul>
-        </div>
-        <div class="blueTittles">
-            <h1 class="blueTittles">Languages</h1>
-        </div>
-        <div class="tittle group-2">
-            <h2 class="title">Spanish native language</h2>
-            <h2 class="title">English advanced (TOEFL Certification)</h2>
-        </div>
-        <div class="blueTittles">
-            <h1 class="blueTittles">Interests</h1>
-        </div>
-            <div class="interest_items">
-                <div class="interest_item">
-                    <i class="material-symbols-outlined">directions_bike</i>
-                    <span>Cycling</span>
-                </div>
-                <div class="interest_item">
-                    <i class="material-symbols-outlined">menu_book</i>
-                    <span>Reading</span>
-                </div>
-                <div class="interest_item">
-                    <i class="material-symbols-outlined">travel_explore</i>
-                    <span>Travel</span>
-                </div>
-            </div>
-        <div class="blueTittles">
-            <h1 class="blueTittles">Other</h1>
-        </div>
-        <div class="tittle group-2">
-            <h2 class="title">Passport</h2>
-            <h2 class="title">Dirver's license</h2>
-            <h2 class="title">B1/B2 USA visa</h2>
-        </div>
-        </div> 
+
+<header>
+  <div class="container hero">
+    <div>
+      <h1>Felix Rodriguez</h1>
+      <p>QA Engineer Junior · Manual & API Testing · Linux & L2/L3 Support</p>
+      <p style="margin-top:1rem;">I help teams deliver stable, well-tested software by combining QA practices with real-world production support experience.</p>
     </div>
-    <div class="group-31">
-        <div class="tittle">
-            <h1 class="tittle">Knowledge and skills</h1>
-            <ul class="job_tasks description">
-                <li>Asset Management</li>
-                <li>Ticket/CR/Others. Management</li>
-                <li>Infrastructure Governance</li>
-                <li>KPI’s/Service level agreements</li>
-                <li>Agile Methodologies</li>
-                <li>Cloud Computing</li>
-                <li>Teamwork</li>
-                <li>Communication</li>
-                <li>Network Deployment</li>
-                <li>ServiceDesk skills</li>
-                <li>DNS/SCCM/DHCP protocols</li>
-                <li>Amazon Web Services</li>
-                <li>CyberArk</li>
-            </ul>
-        </div>
-        <div class="tittle">
-            <h1 class="tittle">Software skills</h1>
-            <ul class="job_tasks description">
-                <li>Active Directory</li>
-                <li>Virtual Desktop Infrastructure VDI</li>
-                <li>Citrix Workspace</li>
-                <li>VMware horizon</li>
-                <li>PDQ Deploy</li>
-                <li>Postman</li>
-                <li>Service Now</li>
-                <li>MS office</li>
-                <li>MS teams</li>
-                <li>Apache NetBeans</li>
-                <li>Command Line Interfaces</li>
-                <li>Amplitude</li>
-                <li>Jira Service Desk</li>
-                <li>Team Viewer</li>
-                <li>Datadog</li>
-                <li>Visual Studio Code</li>
-            </ul>
-        </div>
-        <div class="tittle">
-            <h1 class="tittle">Certifications</h1>
-            <ul class="job_tasks description">
-                <li>Critical Thinking LinkedIn Certification</li>
-                <li>Personal Effectiveness LinkedIn Certification</li>
-                <li>Strategic Thinking LinkedIn Certification</li>
-                <li>Ultimate AWS Certified Solutions Architect Associate</li>
-                <li>TOEFL Certification</li>
-            </ul>
-        </div>
+    <img src="profile.jpg" alt="Felix Rodriguez profile photo">
+  </div>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#blog">QA Notes</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main class="container">
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>Junior QA Engineer with a strong background in L2/L3 technical support, incident management, and Linux environments. I specialize in manual testing and API testing, focusing on clear documentation, defect lifecycle management, and real-world issue reproduction.</p>
     </div>
-<hr align="right">
-    <div class="group-41">
-        <div class="contact">
-            <h1 class="blueTittles">Contact</h1>
-            <div class="contact_info">
-                <p class="description">Celaya Guanajuato</p>
-                <p class="description">+52 442 326 6501</p>
-                <p class="description">esccel21@gmail.com</p>
-            </div>
-        </div>
-        <div class="socials">
-            <h1 class="blueTittles">Socials</h1>
-            <div class="socials_info">
-                <a href="https://github.com/felixed380" class="social_item">
-                    <i data-feather="github"></i>
-                    <span>/felixed380</span>
-                </a>
-                <a href="https://www.linkedin.com/in/felixro/" class="social_item">
-                    <i data-feather="linkedin"></i>
-                    <span>/felixro</span>
-                </a>
-                <a href="https://www.youtube.com/@felixed" class="social_item">
-                    <i data-feather="youtube"></i>
-                    <span>/felixed</span>
-                </a>
-            </div>
-        </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience & Education</h2>
+    <div class="card">
+      <strong>L2 Support Engineer – Qentelli</strong><br>
+      <span class="muted">2024 – Present</span>
+      <p>Linux administration, MicroK8s, log analysis, issue reproduction, ServiceNow ticketing.</p>
     </div>
-    <script>
-        feather.replace();
-    </script>          
+    <div class="card">
+      <strong>L3 Support Engineer – Restaurant Brands International</strong><br>
+      <span class="muted">2022 – 2024</span>
+      <p>Incident triage, escalation workflows, production issue validation.</p>
+    </div>
+    <div class="card">
+      <strong>QA Engineer Bootcamp</strong><br>
+      <span class="muted">2026</span>
+      <p>Hands-on QA projects covering web testing and API testing.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="card">
+      <span class="badge">Manual Testing</span>
+      <span class="badge">API Testing (Postman)</span>
+      <span class="badge">Bug Reporting</span>
+      <span class="badge">Test Case Design</span>
+      <span class="badge">Jira / ServiceNow</span>
+      <span class="badge">Linux</span>
+      <span class="badge">Basic SQL</span>
+      <span class="badge">Agile / Scrum</span>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>QA Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <strong>Web Application Testing</strong>
+        <p>Manual QA project including test plans, test cases, and bug reports.</p>
+        <a href="https://github.com/felixed380">View Repository →</a>
+      </div>
+      <div class="card">
+        <strong>API Testing with Postman</strong>
+        <p>REST API validation with positive/negative scenarios and JSON checks.</p>
+        <a href="https://github.com/felixed380">View Repository →</a>
+      </div>
+      <div class="card">
+        <strong>Support-to-QA Transition</strong>
+        <p>Real-world issue reproduction, log analysis, and QA mindset.</p>
+        <a href="https://github.com/felixed380">View Repository →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog">
+    <h2>QA Notes & Learning</h2>
+    <div class="card">
+      <p>Short notes about QA concepts, bug analysis strategies, and lessons learned during my QA journey. (Coming soon)</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email: esccel21@gmail.com</p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/felixro">linkedin.com/in/felixro</a></p>
+      <p>GitHub: <a href="https://github.com/felixed380">github.com/felixed380</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 Felix Rodriguez · QA Engineer Portfolio</p>
+</footer>
+
 </body>
-<hr>
 </html>
