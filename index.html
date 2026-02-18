@@ -227,6 +227,24 @@ nav ul {
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
+.project-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.8rem;
+  margin-top: 1.2rem;
+}
+
+.project-images img {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.project-images img:hover {
+  transform: scale(1.03);
+}
   </style>
 </head>
 <body>
@@ -466,6 +484,7 @@ nav ul {
 
 </body>
 </html>
+
 
 
 
