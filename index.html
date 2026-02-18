@@ -208,6 +208,25 @@ nav ul {
     gap: 0.8rem;
   }
 }
+.card ul {
+  margin-top: 0.5rem;
+  margin-left: 1.5rem;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--secondary);
+}
+
+.card strong {
+  display: block;
+  margin-top: 1rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
   </style>
 </head>
 <body>
@@ -341,26 +360,83 @@ nav ul {
     </div>
   </section>
 
-  <section id="projects">
-    <h2>QA Projects</h2>
-    <div class="grid">
-      <div class="card">
-        <strong>Web Application Testing</strong>
-        <p>Manual QA project including test plans, test cases, and bug reports.</p>
-        <a href="https://github.com/felixed380">View Repository →</a>
-      </div>
-      <div class="card">
-        <strong>API Testing with Postman</strong>
-        <p>REST API validation with positive/negative scenarios and JSON checks.</p>
-        <a href="https://github.com/felixed380">View Repository →</a>
-      </div>
-      <div class="card">
-        <strong>Support-to-QA Transition</strong>
-        <p>Real-world issue reproduction, log analysis, and QA mindset.</p>
-        <a href="https://github.com/felixed380">View Repository →</a>
-      </div>
+<section id="projects">
+  <h2>QA Projects</h2>
+  <div class="card">
+    <h3>🌐 Web Application Testing</h3>
+    <p>Manual QA project for a web application. Analyzed functional requirements, designed test cases using equivalence partitioning and boundary value techniques, and reported defects in JIRA.</p>
+    
+    <strong>Key Results:</strong>
+    <ul>
+      <li>🧪 Designed and executed <strong>30+ test cases</strong> covering functional flows</li>
+      <li>🐞 Reported <strong>10+ bugs</strong> documented with severity and priority</li>
+      <li>📋 Delivered complete test plan and test summary report</li>
+    </ul>
+
+    <div style="margin-top: 1rem;">
+      <span class="badge">Manual Testing</span>
+      <span class="badge">Test Case Design</span>
+      <span class="badge">Bug Reporting</span>
+      <span class="badge">JIRA</span>
     </div>
-  </section>
+
+    <div style="margin-top: 1rem;">
+      <a href="https://github.com/felixed380" class="btn" target="_blank">
+        <i class="fa-brands fa-github"></i> View Repository
+      </a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>🔗 API Testing with Postman</h3>
+    <p>REST API validation project covering CRUD operations with positive and negative scenarios, JSON response checks, and status code verification.</p>
+    
+    <strong>Key Results:</strong>
+    <ul>
+      <li>🔗 Tested <strong>4+ endpoints</strong> (GET, POST, PUT, DELETE)</li>
+      <li>✅ Designed <strong>positive and negative</strong> test scenarios</li>
+      <li>📄 Documented JSON structure and expected responses</li>
+    </ul>
+
+    <div style="margin-top: 1rem;">
+      <span class="badge">Postman</span>
+      <span class="badge">API Testing</span>
+      <span class="badge">REST</span>
+      <span class="badge">JSON</span>
+    </div>
+
+    <div style="margin-top: 1rem;">
+      <a href="https://github.com/felixed380" class="btn" target="_blank">
+        <i class="fa-brands fa-github"></i> View Repository
+      </a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>🛠️ Support-to-QA Transition</h3>
+    <p>Real-world issue reproduction project using L2/L3 support experience. Includes log analysis, environment replication, and test documentation based on production incidents.</p>
+    
+    <strong>Key Results:</strong>
+    <ul>
+      <li>🔍 Reproduced production issues using <strong>kubectl logs and grep</strong></li>
+      <li>📝 Translated support tickets into <strong>structured test cases</strong></li>
+      <li>🐧 Validated fixes in <strong>Linux/MicroK8s environments</strong></li>
+    </ul>
+
+    <div style="margin-top: 1rem;">
+      <span class="badge">Linux</span>
+      <span class="badge">Log Analysis</span>
+      <span class="badge">kubectl</span>
+      <span class="badge">Test Documentation</span>
+    </div>
+
+    <div style="margin-top: 1rem;">
+      <a href="https://github.com/felixed380" class="btn" target="_blank">
+        <i class="fa-brands fa-github"></i> View Repository
+      </a>
+    </div>
+  </div>
+</section>
 
   <section id="blog">
     <h2>QA Notes & Learning</h2>
@@ -386,6 +462,7 @@ nav ul {
 
 </body>
 </html>
+
 
 
 
