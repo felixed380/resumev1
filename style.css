@@ -35,3 +35,58 @@
 .card p:last-child {
   margin-bottom: 0;
 }
+/* QA Projects — metrics */
+.project-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+  padding: 1rem 0;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.metric {
+  text-align: center;
+}
+
+.metric-number {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1;
+}
+
+.metric-label {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 0.3rem;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  background: #eff6ff;
+  transition: 0.2s;
+}
+
+.project-links a:hover {
+  background: var(--primary);
+  color: white;
+}

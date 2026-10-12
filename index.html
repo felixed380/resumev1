@@ -385,72 +385,124 @@ nav ul {
 
 <section id="projects">
   <h2>QA Projects</h2>
+
+  <!-- PROYECTO 1: URBAN SCOOTER -->
   <div class="card">
-    <h3>🌐 Urban Routes Web Application Testing</h3>
-    <p>Manual QA project for a web application Urban Routes. Analyzed functional and designed requirements, designed test cases using equivalence partitioning and boundary value techniques, and reported defects in JIRA.</p>
-    
-    <strong>Key Results:</strong>
+    <h3>🛴 Urban Scooter — Full QA Cycle</h3>
+    <p><em>TripleTen QA Engineering Bootcamp · Final Project</em></p>
+    <p>End-to-end QA project covering the complete testing cycle on a scooter rental platform (web app + courier Android app). Includes test design with equivalence classes and boundary values, manual testing across web and mobile, REST API testing in Postman, and backend validation with SQL queries.</p>
+
+    <div class="project-metrics">
+      <div class="metric">
+        <span class="metric-number">33</span>
+        <span class="metric-label">Test cases</span>
+      </div>
+      <div class="metric">
+        <span class="metric-number">25</span>
+        <span class="metric-label">Bug reports</span>
+      </div>
+      <div class="metric">
+        <span class="metric-number">10</span>
+        <span class="metric-label">API endpoints</span>
+      </div>
+      <div class="metric">
+        <span class="metric-number">4</span>
+        <span class="metric-label">SQL validations</span>
+      </div>
+    </div>
+
+    <strong>Scope:</strong>
     <ul>
-      <li>🧪 Designed and executed 30+ test cases covering functional flows</li>
-      <li>🐞 Bug reporting documented with steps, desired result and actual result</li>
-      <li>📋 Delivered complete test plan and test summary report</li>
+      <li>🧪 Test design with equivalence classes, boundary values & checklists</li>
+      <li>📱 Manual testing on web (Chrome/Firefox) and Android emulator (Pixel 9 Pro)</li>
+      <li>🔗 REST API testing with Postman — status codes, payloads, error handling</li>
+      <li>🗄️ Backend data validation with PostgreSQL queries</li>
+      <li>🐞 Defect reporting in JIRA with reproducible steps and evidence</li>
     </ul>
 
     <div style="margin-top: 1rem;">
       <span class="badge">Manual Testing</span>
-      <span class="badge">Test Case Design</span>
-      <span class="badge">Bug Reporting</span>
-      <span class="badge">JIRA</span>
-    </div>
-    <div class="project-images">
-      <img src="Imagenes/proyecto1_screenshot1.png" alt="Test cases screenshot">
-      <img src="Imagenes/proyecto1_screenshot2.png" alt="Bug report JIRA">
-    </div>
-  </div>
-
-  <div class="card">
-    <h3>🔗 API Testing with Postman for Urban Grocers</h3>
-    <p>Degigned and executed 40 tests cases with positive and negative scenarios, JSON response checks, and status code verification.</p>
-    
-    <strong>Key Results:</strong>
-    <ul>
-      <li>🔗 Tested 4+ endpoints (GET, POST, PUT, DELETE)</li>
-      <li>✅ Designed positive and negative test scenarios</li>
-      <li>📄 Documented JSON structure and expected responses</li>
-      <li>🐞 Bug reporting documented with steps, desired result and actual result</li>
-      <li>📋 Delivered complete test plan and test summary report</li>
-    </ul>
-
-    <div style="margin-top: 1rem;">
-      <span class="badge">Postman</span>
       <span class="badge">API Testing</span>
-      <span class="badge">REST</span>
-      <span class="badge">JSON</span>
+      <span class="badge">Postman</span>
+      <span class="badge">PostgreSQL</span>
+      <span class="badge">JIRA</span>
+      <span class="badge">Android Testing</span>
     </div>
-    <div class="project-images">
-      <img src="Imagenes/proyecto2_screenshot1.png" alt="Test cases screenshot">
-      <img src="Imagenes/proyecto2_screenshot2.png" alt="Bug report JIRA">
+
+    <div class="project-links">
+      <a href="https://github.com/felixed380/UrbanScooterProject" target="_blank">
+        <i class="fa-brands fa-github"></i> Repository
+      </a>
+      <a href="https://github.com/felixed380/UrbanScooterProject/blob/main/casos_de_prueba.md" target="_blank">
+        <i class="fa-solid fa-list-check"></i> Test cases
+      </a>
+      <a href="https://github.com/felixed380/UrbanScooterProject/blob/main/reportes_de_errores.md" target="_blank">
+        <i class="fa-solid fa-bug"></i> Bug reports
+      </a>
     </div>
   </div>
 
+  <!-- PROYECTO 2: URBAN ROUTES SELENIUM -->
   <div class="card">
-    <h3>🛠️ Support-to-QA Transition</h3>
-    <p>Real-world issue reproduction project using L2/L3 support experience. Includes log analysis, environment replication, and test documentation based on production incidents.</p>
-    
-    <strong>Key Results:</strong>
+    <h3>🚗 Urban Routes — E2E Automation with Selenium</h3>
+    <p><em>End-to-end test automation in Python</em></p>
+    <p>Automated end-to-end test that simulates a complete user booking flow on Urban Routes (ride-hailing web app): from entering origin/destination, selecting a fare, confirming phone via SMS, registering a payment method, to customizing the ride with a driver message and extra items. Built with Page Object Model for maintainability.</p>
+
+    <div class="project-metrics">
+      <div class="metric">
+        <span class="metric-number">284</span>
+        <span class="metric-label">Lines of code</span>
+      </div>
+      <div class="metric">
+        <span class="metric-number">7</span>
+        <span class="metric-label">Flow steps</span>
+      </div>
+      <div class="metric">
+        <span class="metric-number">5</span>
+        <span class="metric-label">Tech techniques</span>
+      </div>
+      <div class="metric">
+        <span class="metric-number">100%</span>
+        <span class="metric-label">Pass rate</span>
+      </div>
+    </div>
+
+    <strong>Flow covered:</strong>
     <ul>
-      <li>🔍 Reproduced production issues using <strong>kubectl logs and grep</strong></li>
-      <li>📝 Translated support tickets into <strong>structured test cases</strong></li>
-      <li>🐧 Validated fixes in <strong>Linux/MicroK8s environments</strong></li>
+      <li>📍 Origin & destination input</li>
+      <li>🚕 Taxi request + "Comfort" fare selection</li>
+      <li>📱 Phone number confirmation via SMS code (extracted from network logs via CDP)</li>
+      <li>💳 Payment method registration</li>
+      <li>💬 Driver message + extra items (blanket, tissues, ice cream counter)</li>
+    </ul>
+
+    <strong>Advanced techniques:</strong>
+    <ul>
+      <li>🏗️ <strong>Page Object Model (POM)</strong> — separation of page logic from test logic</li>
+      <li>⏱️ <strong>WebDriverWait + Expected Conditions</strong> — handling async React loading</li>
+      <li>🌐 <strong>Chrome DevTools Protocol</strong> — intercepting network responses for SMS code</li>
+      <li>🎯 <strong>execute_script & switch_to.active_element</strong> — interacting with hidden/0px elements</li>
+      <li>⌨️ <strong>Keys.TAB (blur)</strong> — triggering form validations naturally</li>
     </ul>
 
     <div style="margin-top: 1rem;">
-      <span class="badge">Linux</span>
-      <span class="badge">Log Analysis</span>
-      <span class="badge">kubectl</span>
-      <span class="badge">Test Documentation</span>
+      <span class="badge">Python</span>
+      <span class="badge">Selenium</span>
+      <span class="badge">pytest</span>
+      <span class="badge">POM</span>
+      <span class="badge">E2E Testing</span>
+    </div>
+
+    <div class="project-links">
+      <a href="https://github.com/felixed380/qa-project-Urban-Routes-es" target="_blank">
+        <i class="fa-brands fa-github"></i> Repository
+      </a>
+      <a href="https://github.com/felixed380/qa-project-Urban-Routes-es/blob/main/main.py" target="_blank">
+        <i class="fa-solid fa-code"></i> Source code
+      </a>
     </div>
   </div>
+
 </section>
 
   <section id="blog">
